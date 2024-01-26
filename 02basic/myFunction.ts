@@ -33,10 +33,20 @@ return "";
 }
 
 
-const heros  = [ "thor", "spiderman", "ironman" ]
+const heros  = ["thor", "spiderman", "ironman" ];
+// const heros  = [1,2,3,4];
 
-heros.map( hero => {
-    return `hero is ${hero}`
+heros.map( (hero):string => {
+    return `hero is ${hero}`;
 })
+
+function consoleError(errmsg: string):void{
+    console.log(errmsg);
+}
+
+function handlelError(errmsg: string):never{
+    throw new Error(errmsg);
+}
+
 
 export{}
